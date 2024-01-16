@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Txanponak Aldaketa Kalkulagailua</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+
+    <h1>Moneta Aldaketa Kalkulagailua</h1>
+
+    <form id="cambioForm" action="convertir.php" method="POST">
+        <label for="kantitatea">Zenbateko eurotan:</label>
+        <input type="number" name="kantitatea" id="kantitatea" required>
+        <br>
+
+        <label>Aukeratu txanponek:</label>
+        <select name="dirua" id="dirua" required>
+            <option value="USD">Dolarra</option>
+            <option value="GBP">Libra esterlina</option>
+            <option value="ARS">Pesu Argentinarra</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Bihurtu">
+    </form>
+</body>
+</html>
